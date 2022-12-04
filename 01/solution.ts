@@ -11,9 +11,9 @@ const array = input
   .sort((a, b) => a - b);
 
 // part one
-const partOne = array.at(-1);
-console.log(partOne);
+const part1 = array.at(-1);
+console.log(part1);
 
 // part two
-const partTwo = array.slice(-3).reduce((a, b) => Number(a) + Number(b), 0);
-console.log(partTwo);
+const part2 = array.slice(-3).reduce((a, b) => Number(a) + Number(b), 0);
+console.log(part2);

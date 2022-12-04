@@ -28,7 +28,7 @@ const part1 = input
   })
   .reduce((a, b) => Number(a) + Number(b), 0);
 
-// console.log(part1);
+console.log(part1);
 
 // part two
 const part2 = input
