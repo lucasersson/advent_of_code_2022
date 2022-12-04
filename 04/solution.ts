@@ -7,9 +7,8 @@ const part1 = input
   .map((x) => x.map((e) => e.split("-")))
   .filter(
     (i) =>
-      (Number(i[0][0]) >= Number(i[1][0]) &&
-        Number(i[0][1]) <= Number(i[1][1])) ||
-      (Number(i[1][0]) >= Number(i[0][0]) && Number(i[1][1]) <= Number(i[0][1]))
+      (+i[0][0] >= +i[1][0] && +i[0][1] <= +i[1][1]) ||
+      (+i[1][0] >= +i[0][0] && +i[1][1] <= +i[0][1])
   ).length;
 
 console.log(part1);
